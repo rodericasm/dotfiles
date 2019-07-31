@@ -1,0 +1,34 @@
+#! /bin/sh
+
+sxhkd &
+xbindkeys &
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc config border_width         1
+bspc config window_gap          15
+bspc config   top_padding	 50
+bspc config   bottom_padding	50
+bspc config   left_padding 	80
+bspc config  right_padding	80
+
+bspc config -d '^2' top_padding -50
+bspc config -d '^2' bottom_padding -50
+bspc config -d '^2' left_padding -80
+bspc config -d '^2' right_padding -80
+
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a  '*:zathura'  state=tiled
+bspc rule -a Firefox desktop='^2' follow=on
+bspc rule -a mpv desktop='^4' follow=on
+#startup
+feh --randomize --bg-fill ~/Downloads/images/*
+
+urxvt -hold -e gotop --color=vice -b &
+sleep 2s
+urxvt -hold -e tty-clock -c -B -t -b -C7 &
+sleep 3s
+urxvt -hold -e neofetch --ascii "$(fortune ~/biblefortune/Bible-NIV-Fortune | cowsay -f tableflip  -W 29)" &

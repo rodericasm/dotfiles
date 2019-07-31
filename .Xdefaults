@@ -1,0 +1,69 @@
+! special
+*.foreground:   #ede1cf
+*.background:   #000000
+*.cursorColor:  #ede1cf
+
+! black
+*.color0:       #000000
+*.color8:       #e927fe
+
+! red
+*.color1:       #13100b
+*.color9:       #eb96a6
+
+! green
+*.color2:       #28221a
+*.color10:      #fe829c
+
+! yellow
+*.color3:       #433b2e
+*.color11:      #7dbff8
+
+! blue
+*.color4:       #655a48
+*.color12:      #8cc1f1
+
+! magenta
+*.color5:       #8f8067
+*.color13:      #55b8ae
+
+! cyan
+*.color6:       #c0ac8c
+*.color14:      #fd487b
+
+! white
+*.color7:       #ede1cf
+*.color15:      #fc88a0
+
+
+
+Rxvt*geometry:                115x40
+URxvt*font: xft:Inconsolata:size=11
+URxvt*depth:                24
+URxvt*borderless: 1
+URxvt*scrollBar:            false
+URxvt*saveLines:  2000
+URxvt.internalBorder:	20
+
+
+! Meta modifier for keybindings
+!URxvt.modifier: super
+
+!! perl extensions
+#URxvt.perl-ext:             default,url-select,clipboard
+
+! url-select (part of urxvt-perls package)
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.url-select.autocopy:  true
+URxvt.url-select.button:    2
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+
+! Nastavuje kopirovani
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! disable the stupid ctrl+shift 'feature'
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
