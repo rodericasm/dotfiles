@@ -2,7 +2,7 @@
 
 my dot files for my laptop (1366x768) arch setup.
 
-![31/07/19](https://i.imgur.com/U55Z38c.png)
+![31/07/19](https://raw.githubusercontent.com/rodericasm/dotfiles/master/2019-07-31-110111_1366x768_scrot.png)
 
 core packages:
 - bspwm (wm)
