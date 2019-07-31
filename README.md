@@ -11,4 +11,5 @@ core packages:
 - gotop
 - oh-my-zsh (shell) (theme: gallois)
 
-- [] setup make files
+Todo
+[] setup make files
