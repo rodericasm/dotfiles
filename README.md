@@ -12,6 +12,7 @@ core packages:
 - ttyclock
 - gotop
 - oh-my-zsh (shell) (theme: gallois)
+- urxvt (terminal)
 
 Todo
 [] setup make files
